@@ -66,7 +66,7 @@
 // })
 
 
-
+// promise请求数据接口封装
 // function sendAJAX(url){
 //     return new Promise((resolve,reject)=>{
 //         // 1.创建对象
