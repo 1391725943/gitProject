@@ -28,7 +28,7 @@ vue.config.js可以对脚手架进行个性化定制 详情见：https://cli.vue
 ref 可以加在组件标签上 获取组建的标签 获取当前属性下的所有dom元素 <h1 v-text="title" ref="title1"></h1>
 获取方法：vm下的$refs.title1
 
-props 接收组件外部传进得数据 
+props 接收组件外部传进得数据1
 1.接受方法（数组）  只接收  props:['name','age']
 2.接受方法（对象）  限制类型props:{name:String,age:Number},
 3.接受方法（对象）  限制类型(直接写数据类型) 限制必要性required 设置默认值defatult
