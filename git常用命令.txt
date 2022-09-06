@@ -21,10 +21,10 @@ $ git config --global user.email test@runoob.com
     16）git remote add 别名  远程仓库地址（创建别名） 
     17）git remote 别名 set-rul[远程仓库地址]      修改别名的远程仓库地址
     18）git remote rename old-name new-name   修改别名
-    19)  git remote rm别名（移除别名）
+    19)  git remote rm 别名（移除当前的别名）
     20）git push 别名 分支名（推送到远程库  别名可以直接用链接  有别名可以不用）
     21）git pull 别名 分支名（拉取分支）
-    22）git clone 代码链接（克隆代码会做如下操作 1：拉去代码 2：初始化本地仓库 3：创建别名）   
+    22）git clone 代码链接（克隆代码会做如下操作 1：拉去代码 2：初始化本地仓库 3：创建别名）
 
 3、快捷按键 vm
     1）esc =>:wq 退出
