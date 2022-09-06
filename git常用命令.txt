@@ -1,0 +1,34 @@
+git指向问题 就是指针的切换
+1、配置信息
+$ git config --global user.name "runoob"
+$ git config --global user.email test@runoob.com
+2、常用命令 
+    1）git init 初始化
+    2）git add 添加暂存区
+    3）git commit  -m "日志信息" 文件名提交暂存区到本地仓库
+    4）git status 查看仓库状态
+    5）git reflog 查看版本信息
+    6）git log 查看版本详细信息 
+    7）cat hello.txt （cat 文件名）查看文件内容
+    8）vim hello.txt（vim 文件名） 修改并新建文件
+    9）git reset --hard 版本号（更改指针的索引 显示文件）
+    10）git branch 分支名（创建分支）
+    11）git branch -v（查看分支）
+    12）git checkout hot-fix（git checkout 分支名）切换分支
+    13）git merge 分支名（把指定的分支合并到当前分支上）
+    14）git branch -d 分支名（删除某个指定名字的分支）
+    15）git remote -v（查看当前所有远程地址别名）
+    16）git remote add 别名  远程仓库地址（创建别名）                git remote rm别名（移除别名）
+    17）git push 别名 分支名（推送到远程库  别名可以直接用链接  有别名可以不用）
+    18）git pull 别名 分支名（拉取分支）
+    19）git clone 代码链接（克隆代码会做如下操作 1：拉去代码 2：初始化本地仓库 3：创建别名）
+    20）git remote 别名 set-rul[远程仓库地址]      修改别名的远程仓库地址
+    21）git remote rename old-name new-name   修改别名
+
+3、快捷按键 vm
+    1）esc =>:wq 退出
+    2）ctrl+insert复制    shift+insert删除
+
+4、团队协作
+大致意思：员工A通过push推送到代码托管中心   员工B通过clone克隆代码中心的内容  修改后代码继续push代码托管中心   员工A 通过pull拿到员工B修改后的内容
+跨团队协作：员工C把员工AB的代码中心fork到自己的代码中心   员工C通过clone克隆代码修改  员工C通过push上传到自己的代码中心  发送请求pull request给员工AB代码中心  员工AB通过审核判断是否需要接收  同意就merge合并代码  
