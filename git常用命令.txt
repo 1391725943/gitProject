@@ -25,6 +25,7 @@ $ git config --global user.email test@runoob.com
     20）git push 别名 分支名（推送到远程库  别名可以直接用链接  有别名可以不用）
     21）git pull 别名 分支名（拉取分支）
     22）git clone 代码链接（克隆代码会做如下操作 1：拉去代码 2：初始化本地仓库 3：创建别名）
+    23）git ls-files 查看本地暂存区文件
 
 3、快捷按键 vm
     1）esc =>:wq 退出
