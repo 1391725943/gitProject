@@ -1,0 +1,33 @@
+// 冒泡排序法
+var arr1 = [3,4,99,5,1,14,89,6,2]
+for(let i=0;i<arr1.length-1;i++){
+    for(let j=0;j<arr1.length-1-i;j++){
+        if(arr1[j]>arr1[j+1]){
+            var temp = arr1[j+1]
+            arr1[j+1] = arr1[j]
+            arr1[j] = temp
+        }
+    }
+}
+console.log(arr1)
+
+// 选择排序法
+var arr1 = [3,4,99,5,1,14,89,6,2]
+for(let i=0;i<arr1.length-1;i++){
+    var _index = i
+    for(let j=i+1;j<arr1.length;j++){
+        if(arr1[_index]>arr1[j]){
+            _index = j
+        }
+    }
+    var temp = arr1[i]
+    arr1[i] = arr1[_index]
+    arr1[_index] = temp
+
+}
+console.log(arr1);
+
+//乱序数组
+ function randerArr(arr) {
+    return arr.sort(() => Math.random() - 0.5);
+  }
